@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0c0b14;
+  line-height: 1.8;
+}
+
+.font-siz {
+  font-size: 43%;
+  margin-bottom: 0;
+}
+.navbar {
+  border-radius: 2%;
+}
+
+/* carousel */
+
+img {
+  width: 100%;
+}
+
+.Hero {
+  background-position: center;
+  min-height: 100vh;
+  background: linear-gradient(to right,#1b1f34, rgba(27, 31, 52, 0)),
+    url("../src/assets/hair3.jpg") no-repeat;
+  background-size: cover;
+}
+
+section {
+  padding-top: 21%;
+  /* padding-bottom: 23%; */
+  padding-left: 7%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: white;
+  font-family: "Dela Gothic One", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+
+  }
+
+  /* footer */
+  .foot{
+    display: flex;
+    
+  }
+  .foot>div{
+    width: 29%;
+    margin-right: 3%;
+    margin-top: 2%;
+    margin-left: 1%;
+    height: 60vh;
+  }
+  .foot h2{
+    font-family: monospace;
+    color: yellowgreen;
+  }
+  .foot p{
+    font-size: small;
+  }
