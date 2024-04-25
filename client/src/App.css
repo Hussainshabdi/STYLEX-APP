@@ -52,6 +52,7 @@ h5 {
   /* footer */
   .foot{
     display: flex;
+    background: #000;
     
   }
   .foot>div{
@@ -68,3 +69,88 @@ h5 {
   .foot p{
     font-size: small;
   }
+
+  /* services section */
+ .serv{
+  margin:-10% 5%;
+  align-items: center;
+    /* width: 104%; */
+    display: flex;
+    justify-content: center;
+    width: 79%;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+}
+ 
+.main{
+  align-items: center;
+    margin: 4% -5%;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.cards{
+  /* background: white;
+  border-radius: 3%;
+  padding: 2%;
+  display: flex;
+  margin: 0px 3% 6% 1%;
+  flex-direction: column;*/
+  align-items: center; 
+  display: flex;
+    margin: 0px 0% -3% 0%;
+    flex-direction: column;
+}
+.cards img{
+  border-radius: 3%;
+  height: 45%;
+
+}
+.cards p{
+  color: wheat;
+}
+
+/* contact form */
+.contact-form{
+  margin-top: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:42%;
+}
+
+.main-form{
+  display: flex;
+  align-items: center;
+}
+
+/* .main-form input{
+  width: 12%;
+} */
+
+.inp{
+  width: 39vw;
+}
+/* #inputEmail4{
+  widht
+} */
+
+.send{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container{
+  text-align: center;
+}

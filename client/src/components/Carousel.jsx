@@ -1,5 +1,7 @@
 import React from "react";
 import salon1 from "../assets/salon1.jpg";
+import { Outlet, Link } from "react-router-dom";
+
 
 const Carousel = () => {
   return (
@@ -51,7 +53,7 @@ const Carousel = () => {
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Possimus .
               </p>
-              <a href="/bookapt" className="btn btn-warning fw-bold">Book Appointment</a>
+              <Link to={"/services"} className="btn btn-warning fw-bold">Book Appointment</Link>
             </div>
           </div>
         </div>
