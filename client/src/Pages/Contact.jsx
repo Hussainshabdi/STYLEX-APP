@@ -1,5 +1,6 @@
 import React from "react";
 import StyleNav from "../components/StyleNav";
+import End from "../components/End";
 
 const Contact = () => {
   return (
@@ -16,10 +17,13 @@ const Contact = () => {
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            className="map"
           ></iframe>
         </div>
+        
+
         <form
-          className="row g-3 main-form d-flex text-light"
+          className="row g-3 main-form d-flex text-light mt-6"
           action="https://formspree.io/f/mgegrqaa"
           method="POST"
         >
@@ -56,6 +60,7 @@ const Contact = () => {
             </label>
             <textarea
               class="form-control"
+              name="message"
               id="exampleFormControlTextarea1"
               rows="5"
               required
@@ -67,7 +72,9 @@ const Contact = () => {
             </button>
           </div>
         </form>
+        
       </div>
+      <End/>
     </div>
   );
 };

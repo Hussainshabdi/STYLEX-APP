@@ -8,13 +8,13 @@ import service5 from "../assets/service5.jpg";
 import service6 from "../assets/service6.jpg";
 import service7 from "../assets/service7.jpg";
 import End from "../components/End";
-import { Link } from "react-router-dom";
+import { Link,Outlet } from "react-router-dom";
 
 const Services = () => {
   return (
     <div>
       <StyleNav />
-      <section>
+      <section className="services-sec">
         <div className="container main d-flex align-self-center flex-column">
           <div className="row serv">
             <div className="col-6 intro">
@@ -43,7 +43,7 @@ const Services = () => {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Dolorum, sequi.
               </p>
-              <h5>Rs:150</h5>
+              <h5>₹150</h5>
             </div>
             <div className="col-lg-4 col-md-6 cards">
               <img src={service7} alt="" />
@@ -52,7 +52,7 @@ const Services = () => {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Dolorum, sequi.
               </p>
-              <h5>Rs:650</h5>
+              <h5>₹650</h5>
             </div>
             <div className="col-lg-4 col-md-6 cards">
               <img src={service4} alt="" />
@@ -61,7 +61,7 @@ const Services = () => {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Dolorum, sequi.
               </p>
-              <h5>Rs:350.00</h5>
+              <h5>₹350.00</h5>
             </div>
             <div className="col-lg-4 col-md-6 cards">
               <img src={service5} alt="" />
@@ -70,7 +70,7 @@ const Services = () => {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Dolorum, sequi.
               </p>
-              <h5>Rs:200</h5>
+              <h5>₹200</h5>
             </div>
             <div className="col-lg-4 col-md-6 cards">
               <img src={service6} alt="" />
@@ -79,12 +79,13 @@ const Services = () => {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Dolorum, sequi.
               </p>
-              <h5>Rs:1200</h5>
+              <h5>₹1200</h5>
             </div>
           </div>
           <div className="bookapt">
-            <Link className="btn btn-warning">Book Appointment</Link>
+            <Link className="btn btn-warning" to={'/bookAppoint'}>Book Appointment</Link>
           </div>
+          <Outlet />
         </div>
       </section>
 

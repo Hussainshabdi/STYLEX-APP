@@ -9,7 +9,7 @@ function StyleNav() {
   const { logout,isAuthenticated,loginWithRedirect,user } = useAuth0();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark fixed-top d-inline-flex ">
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top d-inline-flex nav-main">
       <div className="container">
         <a className="navbar-brand" href="#">
           <h2 className="fw-bold font-monospace">Stylex</h2>

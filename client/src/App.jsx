@@ -9,7 +9,7 @@ import Home from './Pages/Home';
 import Services from './Pages/Services'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
-
+import BookAppoint from './Pages/bookAppoint'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,7 +21,7 @@ function App() {
      <Route path='/contact' element={<Contact/>}/>
      <Route path='/about' element={<About/>}/>
  
-       
+       <Route path='/bookAppoint' element={<BookAppoint/>}/>
      
      </Routes>
     

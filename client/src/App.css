@@ -33,9 +33,9 @@ img {
 }
 
 section {
-  padding-top: 21%;
+  padding-top: 41vh;
   /* padding-bottom: 23%; */
-  padding-left: 7%;
+  padding-left: 0vh;
 }
 
 h1,
@@ -69,7 +69,10 @@ h5 {
   .foot p{
     font-size: small;
   }
+  .nav-main{
+    background-color: #0c0b14;
 
+  }
   /* services section */
  .serv{
   margin:-10% 5%;
@@ -84,7 +87,7 @@ h5 {
  
 .main{
   align-items: center;
-    margin: 4% -5%;
+    /* margin: 4% -5%; */
     flex-direction: column;
     justify-content: center;
 }
@@ -116,9 +119,14 @@ h5 {
   color: wheat;
 }
 
+
+.services-sec{
+  margin-bottom: 4vh;
+  
+}
 /* contact form */
 .contact-form{
-  margin-top: 12%;
+  margin-top: 27vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,6 +136,11 @@ h5 {
 .main-form{
   display: flex;
   align-items: center;
+
+}
+
+.form-container{
+  margin-top: 2vw;
 }
 
 /* .main-form input{
@@ -154,3 +167,51 @@ h5 {
 .container{
   text-align: center;
 }
+
+.map{
+  width: 70vw;
+  margin-bottom: 2vh;
+}
+
+/* About  */
+.about-main{
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  width: 70vh;
+  p{
+    color: bisque;
+  }
+  h2{
+    font-weight: bold;
+  }
+  button{
+    margin-top: 3vh;
+  }
+}
+
+/* book appointment
+ */
+ .book{
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:25vh 58vh ;
+  width: 50vh;
+  justify-content: center;
+  input{
+    margin-bottom: 3vh;
+  }
+  h2{
+    margin-bottom: 3vh;
+  }
+ }
+
+ .container-book{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ }
