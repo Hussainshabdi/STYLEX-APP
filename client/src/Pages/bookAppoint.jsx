@@ -5,7 +5,8 @@ const bookAppoint = () => {
     name: "",
     number: "",
     date: "",
-    time: ""
+    time: "",
+    Hair:""
   });
 
   // handleInputs
@@ -22,7 +23,7 @@ const bookAppoint = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(user);
-    const { name, number, date, time } = user;
+    const { name, number, date, time,Hair } = user;
     event.target.reset();
     const res = await fetch(
       "https://stylex-salon-app-default-rtdb.firebaseio.com/bookings.json",
@@ -35,12 +36,13 @@ const bookAppoint = () => {
           name,
           number,
           date,
-          time
+          time,
+          Hair
         }),
       }
     );
     if (res) {
-      alert("data stored");
+      alert("You will get a call for confirming the appointment");
     } else {
       alert("plz store the data");
     }
@@ -77,7 +79,7 @@ const bookAppoint = () => {
                 onChange={handleInput}
               />
               {/* <label id="service" for="Hair"  >Choose a Service:</label> */}
-              {/* <select name="Hair" id="Hair" required value={user.Name}
+               <select name="Hair" id="Hair" required value={user.Name}
                 onChange={handleInput}>
                 <option value="">None</option>
                 <option value="Haircut">Haircut</option>
@@ -86,7 +88,7 @@ const bookAppoint = () => {
                 <option value="Hair Color">Hair Color</option>
                 <option value="Hair Massage">Head Massage</option>
                 <option value="Facial Gromming">Facial Gromming</option>
-              </select> */}
+              </select> 
               <label for="floatingNumber">Contact Number</label>
             </div>
             <div className="form-floating">
