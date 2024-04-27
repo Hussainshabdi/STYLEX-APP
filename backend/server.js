@@ -3,6 +3,7 @@ const express=require('express');
 const dotenv =require('dotenv');
 const morgan =require('morgan');
 const colors =require('colors');
+const connectToMongo = require("./mongo.js");
 
 
 dotenv.config();
@@ -18,11 +19,11 @@ app.get('/',(req,res)=>{
     })
 })
 
-
 //port
 const port = process.env.PORT || 8080;
 
 //listen
 app.listen(port,()=>{
     console.log("port is running")
+
 })

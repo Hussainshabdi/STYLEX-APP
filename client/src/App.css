@@ -205,6 +205,12 @@ h5 {
   h2{
     margin-bottom: 3vh;
   }
+  select{
+    width: 32vh;
+    margin-bottom: 3vh;
+    padding: 2vh;
+    border-radius: 1vh;
+  }
  }
 
  .container-book{
